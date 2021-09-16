@@ -19,6 +19,8 @@
         var li = document.createElement("li");
         li.append(document.getElementById("big-text").value);
 
+        var div = document.createElement("div");
+
         ul.appendChild(li);
       };
 
@@ -76,16 +78,18 @@
       <textarea id="big-text" cols="30" rows="10"></textarea>
       <br />
 
+      <select name="rating" id="rating">
+        <option value="1">One star</option>
+        <option value="2">Two stars</option>
+        <option value="3">Three stars</option>
+        <option value="4">Four stars</option>
+      </select>
+      <br />
+
       <button id="add-comment">Add comment</button>
       <button id="remove-comments">Remove comments</button>
 
       <ul id="unordered-list"></ul>
-      <select name="Rating" id="">
-        <option value="1">*</option>
-        <option value="2">**</option>
-        <option value="3">***</option>
-        <option value="4">****</option>
-      </select>
     </div>
   </body>
 </html>
